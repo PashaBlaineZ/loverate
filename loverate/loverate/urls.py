@@ -20,6 +20,6 @@ from hello import views
 
 urlpatterns = [
     path('', views.index),
-    path('about', views.about),
+    path('about', views.about, kwargs={"name":"Tom", "age": 38}),
     path('contacts', views.contacts),
 ]
